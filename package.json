@@ -1,0 +1,62 @@
+{
+  "name": "blogql",
+  "version": "1.0.0",
+  "description": "GraphQL API for blog",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index",
+    "test": "mocha --reporter spec",
+    "start": "nodemon",
+    "dev": "nodemon -r dotenv/config index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NatalyKT/blogQL.git"
+  },
+  "author": "nataly_kt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalyKT/blogQL/issues"
+  },
+  "type": "module",
+  "db": {
+    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:g:migration": "sequelize-cli migration:generate --name",
+    "db:g:seed": "sequelize-cli seed:generate --name",
+    "db:seeds": "sequelize-cli db:seed:all"
+  },
+  "homepage": "https://github.com/NatalyKT/blogQL#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.10",
+    "apollo-server": "^3.6.3",
+    "aws-sdk": "^2.1095.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "bull": "^4.7.0",
+    "chai": "^4.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.3",
+    "graphql": "^16.3.0",
+    "graphql-tag": "^2.12.6",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "multer": "^1.4.4",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "request": "^2.88.2",
+    "sequelize": "^6.17.0",
+    "sharp": "^0.30.3",
+    "uuid": "^8.3.2"
+  }
+}
